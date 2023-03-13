@@ -2,10 +2,7 @@ import { useState } from 'react';
 import './ExpenseForm.css';
 
 const ExpenseForm = (props) => {
-    // const[enteredTitle, setEnteredTitle] =useState('');
-    // const[enteredAmount, setEnteredAmount] = useState('');
-    // const[enteredDate, setEnteredDate] = useState('');
-
+   
     // initialize state
     const[userInput, setUserInput] = useState({
         enteredTitle: '',
@@ -14,8 +11,7 @@ const ExpenseForm = (props) => {
     });
 
     const titleChangeHandler = (event) => {
-        // setEnteredTitle(event.target.value)
-
+        
         // you can use this alternative instead of having multiple states in the component
 
         // pass in a function to a function
@@ -72,7 +68,7 @@ const ExpenseForm = (props) => {
 
                 <div className='new-expense__control'>
                     <label>Date</label>
-                    <input type='date' min='2022-01-01' max='2023-12-31' value={userInput.enteredDate} onChange={dateChangeHandler}/>
+                    <input type='date' min='2020-01-01' max='2023-12-31' value={userInput.enteredDate} onChange={dateChangeHandler}/>
                 </div>
             </div>
             <div className='new-expense__actions'>
